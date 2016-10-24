@@ -1,0 +1,315 @@
+/* @override 
+	http://blog.conversionlab.no/wp-content/themes/convlab/css/fancy.css
+	http://conversionlab.no/wp-content/themes/convlab/css/fancy.css
+	http://convtest.wpengine.com/wp-content/themes/conversionlab-child/css/fancy.css
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato:300,400,700,900);
+.modal.hide {
+ visibility: hidden;
+  opacity:0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  opacity:0;
+  background: rgba(0,0,0,0.35);
+	background: -webkit-gradient(radial,50% 50%,0,50% 50%,100,color-stop(0%,rgba(0,0,0,0.2)),color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-radial-gradient(50% 50%,rgba(0,0,0,0.2),rgba(0,0,0,0.5) 100%);
+	background: -moz-radial-gradient(50% 50%,rgba(0,0,0,0.2),rgba(0,0,0,0.5) 100%);
+	background: -o-radial-gradient(50% 50%,rgba(0,0,0,0.2),rgba(0,0,0,0.5) 100%);
+	background: radial-gradient(50% 50%,rgba(0,0,0,0.2),rgba(0,0,0,0.5) 100%);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	overflow: auto;
+	overflow-x: hidden;
+	cursor: default;
+	-webkit-perspective: 3000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  
+}
+
+.modal-backdrop.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+//a#button {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  background: #10af90;
+  border: none;
+  border-bottom: 2px solid #0c806a;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+	text-transform: uppercase;
+	 -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+	padding: 7px 10px;
+	margin-top: 7px;
+	margin-left: 15px;
+}
+//a#button:hover {
+  background: #0cc29f;
+}
+//a#button:active,
+a#button:focus {
+  background: #0fa688;
+  border-bottom: 0;
+  border-top: 2px solid #0c806a;
+  outline: none;
+  box-shadow: 0 2px 1px #fff;
+  -moz-box-shadow: 0 2px 1px #fff;
+  -webkit-box-shadow: 0 2px 1px #fff;
+}
+
+.modal {
+  text-align: left;
+  position: fixed;
+  opacity:0;
+  top: 60%;
+  left: 50%;
+  z-index: 200;
+  width: 398px;
+  margin: -17% 0 0 -250px;
+  background-color: #FFF;
+  z-index: 1000;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -moz-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  -webkit-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+  padding: 50px 50px 55px;
+  -webkit-transition: opacity .3s linear, top .3s ease-out;
+    -moz-transition: opacity .3s linear, top .3s ease-out;
+    -ms-transition: opacity .3s linear, top .3s ease-out;
+    -o-transition: opacity .3s linear, top .3s ease-out;
+    transition: opacity .3s linear, top .3s ease-out;
+}
+.modal.in {
+    -webkit-transition: all .3s linear, top .3s ease-out;
+    -moz-transition: all .3s linear, top .3s ease-out;
+    -ms-transition: all .3s linear, top .3s ease-out;
+    -o-transition: all .3s linear, top .3s ease-out;
+    transition: all .3s linear, top .3s ease-out;
+	opacity:1;
+	top: 50%;
+	visibility: visible;
+}
+.modal a.close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  padding: 5px 10px;
+  color: #9099A3;
+  text-decoration: none;
+	font-weight: bold;
+}
+.modal a.close:hover {
+  color: #5d6670;
+}
+.modal h1,
+.modal h2 {
+  margin: 0;
+  padding: 0;
+}
+.modal h1 {
+  color: #31373a;
+  margin-left: -2px;
+  margin-bottom: 0px;
+	font-family: "proxima-nova" !important;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.modal h2 {
+  color: #6e7878;
+  width: 100%;
+  border-bottom: 0px solid #ECEEF1;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+	font: 18px "proxima-nova";
+}
+.modal #response {
+  float: left;
+  font-family: "proxima-nova" !important;
+  font-size: 15px;
+  margin: 23px 0 0 20px;
+  padding: 0 0 0 25px;
+  color: #6e7878;
+  background: url('../gfx/tick.png') left center no-repeat;
+  display: none;
+}
+.modal form#subForm button,
+.modal form#subForm input {
+  font-family: "proxima-nova" !important;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0;
+	text-transform: none;
+	-webkit-transition: none;
+transition: none;
+}
+.modal form#subForm input {
+  width: 378px;
+  border: 1px solid #cfd4db;
+  padding: 12px 10px;
+  margin: 0 0 5px 0;
+  color: #373c44;
+	font: 15px "proxima-nova";
+}
+.modal form#subForm input::-webkit-input-placeholder {
+  color: #a9adb1;
+}
+.modal form#subForm input:-moz-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input::-moz-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input:-ms-input-placeholder {
+  color: #c8ccd1;
+}
+.modal form#subForm input:focus {
+  border-color: #b1b9c6;
+  outline: none;
+}
+.modal form#subForm input:focus::-webkit-input-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus:-moz-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus::-moz-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input:focus:-ms-input-placeholder {
+  color: #acb3ba;
+}
+.modal form#subForm input.error {
+  background: url('../gfx/cross.png') right center no-repeat;
+  background-position: 372px center;
+  color: #df452c;
+}
+.modal form#subForm button {
+  float: left;
+  background: #ef7c46;
+  border: none;
+  border-bottom: 0px solid #d57045;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	   -moz-transition-property: all;
+	   -moz-transition-duration: 0.3s;
+	   -moz-transition-timing-function: ease-out;
+	  	-ms-transition-property: all;
+		-ms-transition-duration: 0.3s;
+		-ms-transition-timing-function: ease-out;
+		 -o-transition-property: all;
+		 -o-transition-duration: 0.3s;
+		 -o-transition-timing-function: ease-out;
+			transition-property: all;
+		 	transition-duration: 0.3s;
+			transition-timing-function: ease-out;
+			width: 100%;
+}
+.modal form#subForm button:hover {
+  background: #ec6120;
+  webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	   -moz-transition-property: all;
+	   -moz-transition-duration: 0.3s;
+	   -moz-transition-timing-function: ease-out;
+	  	-ms-transition-property: all;
+		-ms-transition-duration: 0.3s;
+		-ms-transition-timing-function: ease-out;
+		 -o-transition-property: all;
+		 -o-transition-duration: 0.3s;
+		 -o-transition-timing-function: ease-out;
+			transition-property: all;
+		 	transition-duration: 0.3s;
+			transition-timing-function: ease-out;
+}
+.modal form#subForm button:active,
+.modal form#subForm button:focus {
+  background: #de713f;
+  border-bottom: 0;
+  border-top: 2px solid #d57045;
+  outline: none;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    padding-top: 100px;
+  }
+  .modal, .modal.in {
+    margin: 0;
+    top: 30px;
+    left: 0;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 8%;
+  }
+  .modal form#subForm a.close {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .modal form#subForm h1 {
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .modal form#subForm input {
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .modal form#subForm input.error {
+    background-position: 95% center;
+  }
+  .modal form#subForm button {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal form#subForm #response {
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0 0 22px 0;
+    text-align: center;
+    background-position: bottom center;
+  }
+}

@@ -1,0 +1,96 @@
+<!Doctype>
+<html>
+<head>
+	<style>
+  .socialMedia
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .socialMediaFacebook
+  {
+    position: absolute;
+    top: 105px;
+    left: 185px;
+  }
+  .socialMediaLinkedIn
+  {
+    position: absolute;
+    top: 80px;
+    left: 295px;
+  }
+  .socialMediaTwitter
+  {
+    position: absolute;
+    top: 130px;
+    left: 400px;
+  }
+  .socialMediaPinterest
+  {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+  }
+  .socialMediaPlus
+  {
+    position: absolute;
+    top: 19px;
+    left: 350px;
+  }
+  .socialMediaInstagram
+  {
+    position: absolute;
+    top: 190px;
+    left: 115px;
+  }
+  .socialMediaYoutube
+  {
+    position: absolute;
+    top: 210px;
+    left: 310px;
+  }
+  /*moveIcons*/
+
+  @-webkit-keyframes moveIcons {
+    0% {margin-left: 35px;}
+    100% {margin-left: -150px;}
+  }
+
+  @-moz-keyframes moveIcons {
+  	0% { margin-left: 35px; }
+  	100% { margin-left: -150px; }
+  }
+
+  @keyframes moveIcons {
+  	0% { margin-left: 35px; }
+  	100% { margin-left: -80px; }
+  }
+
+  .icon-set-primary{
+  display: block;
+  float: left;
+  margin-left: 35px;
+  width: -150px;
+  -webkit-animation: moveIcons 5s linear infinite;
+  -moz-animation: moveIcons 5s linear infinite;
+  animation: moveIcons 5s linear infinite;
+	}
+
+}
+	</style>
+</head>
+<body>
+	<div style="position: relative; left: 450px; top: 150px;">
+		<img src="Laptop_Social_Media.png" class="socialMedia"/>
+		<img src="pinterest.png" style="width:48.53px; height:48.7px" class="socialMediaPinterest icon-set-primary"/>
+		<img src="facebook.png" style="width:48.53px; height:48.7px" class="socialMediaFacebook icon-set-primary"/>
+		<img src="twitter.png" style="width:48.53px; height:48.7px" class="socialMediaTwitter icon-set-primary"/>
+		<img src="youtube.png" style="width:48.53px; height:48.7px" class="socialMediaYoutube icon-set-primary"/>
+		<img src="linkedIn.png" style="width:48.53px; height:48.7px" class="socialMediaLinkedIn icon-set-primary"/>
+		<img src="instagram.png" style="width:48.53px; height:48.7px" class="socialMediaInstagram icon-set-primary"/>
+		<img src="google+.png" style="width:48.53px; height:48.7px" class="socialMediaPlus icon-set-primary"/>
+	</div>
+</body>
+</html>
