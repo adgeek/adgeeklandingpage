@@ -122,7 +122,7 @@ section {
 body {
 	color: #666;
 	background-color: #fff;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
@@ -2169,7 +2169,7 @@ table.cart td.actions .checkout-button {
 	border-radius: 5px;
 	color: #666!important;
 	background-color: #ececec;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 }
